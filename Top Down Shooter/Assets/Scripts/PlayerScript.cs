@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour {
+public class PlayerScript : MonoBehaviour {
 
     public float speed;
 
@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour {
     private void Update()
     {
         Vector2 moveInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-         moveVelocity = moveInput.normalized * speed;
+        moveVelocity = moveInput.normalized * speed;
     }
 
     void FixedUpdate()
